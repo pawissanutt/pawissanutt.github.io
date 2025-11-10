@@ -4,6 +4,7 @@
 
 # HTML title tag content
 title = "personal-web"
+base_path = "/personal-web"
 
 # include `assets` in web platform
 [web.resource]
