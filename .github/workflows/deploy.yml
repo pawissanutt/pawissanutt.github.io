@@ -25,8 +25,13 @@ jobs:
       - name: Install Rust toolchain
         uses: dtolnay/rust-toolchain@stable
 
+      - name: Install cargo-binstall
+        uses: taiki-e/install-action@v2
+        with:
+          tool: cargo-binstall
+
       - name: Install Dioxus CLI
-        run: cargo install dioxus-cli --locked
+        run: cargo binstall dioxus-cli --no-confirm --force
 
       - name: Build Dioxus App
         run: dx build --platform web --release
