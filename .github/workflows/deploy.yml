@@ -21,17 +21,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 1. Install Node.js for Tailwind
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20' # Use a current LTS version
-          cache: 'npm'
-
-      - name: Install npm dependencies
-        run: npm install
-
-      # 2. Install Rust and Dioxus CLI
+      # Install Rust and Dioxus CLI
       - name: Install Rust toolchain
         uses: dtolnay/rust-toolchain@stable
 
@@ -41,7 +31,7 @@ jobs:
       - name: Build Dioxus App
         run: dx build --platform web --release
 
-      # 4. Upload the built site as an artifact
+      # Upload the built site as an artifact
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
