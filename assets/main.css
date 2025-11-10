@@ -1,0 +1,19 @@
+/* Base app styling – keep minimal and respect system theme */
+:root { color-scheme: light dark; }
+
+body {
+    margin: 0; /* remove default margins that caused white borders */
+    background-color: #ffffff; /* light mode */
+    color: #111827;            /* near-black text for readability */
+    font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #0f1116; /* dark surface */
+        color: #d1d5db;            /* light gray text */
+    }
+}
+
+/* Let Tailwind control component styles; avoid hard overrides. */
+

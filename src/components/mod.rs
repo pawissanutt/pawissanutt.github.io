@@ -1,0 +1,9 @@
+pub mod home;
+pub mod navbar;
+pub mod hero;
+pub mod featured_research;
+pub mod publications;
+pub mod experience;
+pub mod education;
+pub mod skills;
+pub mod footer;
