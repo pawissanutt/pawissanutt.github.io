@@ -3,8 +3,7 @@
 [web.app]
 
 # HTML title tag content
-title = "personal-web"
-base_path = "/personal-web"
+title = "Pawissanutt"
 
 # include `assets` in web platform
 [web.resource]
