@@ -1,7 +1,7 @@
 use dioxus::prelude::*;
 
 
-const RESUME_PDF: Asset = asset!("/assets/pawissanutt-resume.pdf");
+const RESUME_PDF: Asset = asset!("assets/pawissanutt-resume.pdf");
 
 #[component]
 pub fn Hero() -> Element {
