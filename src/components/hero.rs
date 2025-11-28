@@ -30,7 +30,7 @@ pub fn Hero() -> Element {
                 }
                 p {
                     class: "mt-6 max-w-2xl text-gray-600 dark:text-gray-400",
-                    "Computer Science & Engineering Ph.D. candidate with 4+ years designing high-performance distributed and serverless systems. Originator of the Object-as-a-Service (OaaS) paradigm published across leading venues to streamline cloud-native development. Deep expertise in system architecture, performance optimization, and solving scaling challenges using Kubernetes, Java, Rust, and Python."
+                    "Computer Science Ph.D. with 4+ years of R&D experience in distributed systems, serverless computing, and cloud-native architecture. Pioneered the Object-as-a-Service (OaaS) paradigm, delivering significant performance gains in cloud application development. Proven expertise in designing scalable architectures and optimizing complex systems using Kubernetes, Java, Rust, and Python. Published author in top-tier venues including IEEE TC, SoCC, and ICDCS."
                 }
                 div {
                     class: "flex flex-wrap justify-center gap-4 mt-8",

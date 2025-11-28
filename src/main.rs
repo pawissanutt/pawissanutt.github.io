@@ -13,8 +13,8 @@ pub enum Route {
 }
 
 static FAVICON: Asset = asset!("assets/favicon.ico");
-static MAIN_CSS: Asset = asset!("assets/main.css", AssetOptions::css().with_preload(true));
-static TAILWIND_CSS: Asset = asset!("assets/tailwind.css", AssetOptions::css().with_preload(true));
+static MAIN_CSS: Asset = asset!("assets/main.css", AssetOptions::css().with_preload(true).with_minify(true));
+static TAILWIND_CSS: Asset = asset!("assets/tailwind.css", AssetOptions::css().with_preload(true).with_minify(true));
 
 fn main() {
     dioxus::launch(App);
