@@ -62,6 +62,10 @@ pub fn get_featured_research() -> Signal<Vec<ResearchProject>> {
             github_link: "https://github.com/hpcclab/OaaS".to_string(),
             publications: vec![
                 ResearchPublication {
+                    title: "IEEE IPDPS 2026".to_string(),
+                    link: "#".to_string(),
+                },
+                ResearchPublication {
                     title: "IEEE Transactions on Computers (2025)".to_string(),
                     link: "https://arxiv.org/pdf/2408.04898".to_string(),
                 },
@@ -94,6 +98,13 @@ pub fn get_featured_research() -> Signal<Vec<ResearchProject>> {
 
 pub fn get_publications() -> Signal<Vec<Publication>> {
     use_signal(|| vec![
+        Publication {
+            title: "EdgeWeaver: Accelerating IoT Application Development Across Edge-Cloud Continuum".to_string(),
+            authors: "Lertpongrujikorn, Pawissanutt, Juahn Kwon, Hai Duc Nguyen, and Mohsen Amini Salehi".to_string(),
+            venue: "2026 IEEE International Parallel and Distributed Processing Symposium (IPDPS). IEEE, 2026, accepted in Dec. 2025, To appear.".to_string(),
+            pdf_link: "#".to_string(),
+            doi_link: "#".to_string(),
+        },
         Publication {
             title: "Object as a Service: Simplifying Cloud-Native Development through Serverless Object Abstraction".to_string(),
             authors: "Lertpongrujikorn, Pawissanutt, and Mohsen Amini Salehi".to_string(),
