@@ -66,8 +66,8 @@ pub fn get_featured_research() -> Signal<Vec<ResearchProject>> {
                     link: "#".to_string(),
                 },
                 ResearchPublication {
-                    title: "IEEE Transactions on Computers (2025)".to_string(),
-                    link: "https://arxiv.org/pdf/2408.04898".to_string(),
+                    title: "IEEE Transactions on Computers (2026)".to_string(),
+                    link: "https://doi.org/10.1109/TC.2025.3623602".to_string(),
                 },
                 ResearchPublication {
                     title: "ACM SoCC 2024".to_string(),
@@ -101,14 +101,21 @@ pub fn get_publications() -> Signal<Vec<Publication>> {
         Publication {
             title: "EdgeWeaver: Accelerating IoT Application Development Across Edge-Cloud Continuum".to_string(),
             authors: "Lertpongrujikorn, Pawissanutt, Juahn Kwon, Hai Duc Nguyen, and Mohsen Amini Salehi".to_string(),
-            venue: "2026 IEEE International Parallel and Distributed Processing Symposium (IPDPS). IEEE, 2026, accepted in Dec. 2025, To appear.".to_string(),
+            venue: "2026 IEEE International Parallel and Distributed Processing Symposium (IPDPS). IEEE, 2026, accepted in Dec. 2025.".to_string(),
             pdf_link: "#".to_string(),
             doi_link: "#".to_string(),
         },
         Publication {
-            title: "Object as a Service: Simplifying Cloud-Native Development through Serverless Object Abstraction".to_string(),
+            title: "Foundation CAN LM: A Pretrained Language Model For Automotive CAN Data".to_string(),
+            authors: "Esashi, Akiharu, Pawissanutt Lertpongrujikorn, Justin Makino, Yuibi Fujimoto, and Mohsen Amini Salehi".to_string(),
+            venue: "37th IEEE Intelligent Vehicles Symposium (IV), 2026, accepted.".to_string(),
+            pdf_link: "#".to_string(),
+            doi_link: "#".to_string(),
+        },
+        Publication {
+            title: "Object as a Service: Simplifying Cloud-Native Development Through Serverless Object Abstraction".to_string(),
             authors: "Lertpongrujikorn, Pawissanutt, and Mohsen Amini Salehi".to_string(),
-            venue: "IEEE Transactions on Computers, 2025, accepted in Oct. 2025, In press.".to_string(),
+            venue: "IEEE Transactions on Computers, vol. 75, no. 2, pp. 423–434, Feb. 2026.".to_string(),
             pdf_link: "https://arxiv.org/pdf/2408.04898".to_string(),
             doi_link: "https://doi.org/10.1109/TC.2025.3623602".to_string(),
         },
@@ -257,7 +264,7 @@ pub fn get_education() -> Signal<Vec<EducationItem>> {
 
 pub fn get_skills() -> Signal<Vec<(&'static str, Vec<&'static str>)>> {
     use_signal(|| vec![
-        ("Core Competencies", vec!["Distributed Systems", "Serverless Computing", "Cloud-Native Architecture", "Microservices", "System Design", "Performance Optimization", "Load Testing", "Video Streaming (FFmpeg, HLS, DASH)"]),
+        ("Core Competencies", vec!["Distributed Systems", "Serverless Computing", "Cloud-Native Architecture", "AI/LLM Integration systems", "RAG", "Prompt Engineering", "Microservices", "System Design", "Performance Optimization", "Load Testing", "Video Streaming (FFmpeg, HLS, DASH)"]),
         ("Languages", vec!["Java", "Rust", "Python", "TypeScript", "SQL", "Bash"]),
         ("Cloud Native", vec!["Kubernetes", "Knative", "Docker", "AWS", "Linux"]),
         ("Databases & Storage", vec!["Redis", "MongoDB", "ArangoDB", "MinIO (S3)", "Infinispan"]),
